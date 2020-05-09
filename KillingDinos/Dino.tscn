@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://right1.png" type="Texture" id=1]
+[ext_resource path="res://right2.png" type="Texture" id=2]
+[ext_resource path="res://up2.png" type="Texture" id=7]
+[ext_resource path="res://up1.png" type="Texture" id=9]
+[ext_resource path="res://Dino.cs" type="Script" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 40.6886
+height = 11.4797
+
+[node name="Dino" type="Area2D"]
+script = ExtResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 34.3004, -11.3413 )
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 13.1488, -4.73526 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_Dino_body_entered"]

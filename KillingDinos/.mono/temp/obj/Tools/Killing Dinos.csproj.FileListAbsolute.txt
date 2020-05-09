@@ -1,0 +1,10 @@
+C:\Users\Asix\Desktop\KillingDinos\.mono\temp\bin\Tools\Killing Dinos.dll
+C:\Users\Asix\Desktop\KillingDinos\.mono\temp\bin\Tools\Killing Dinos.pdb
+C:\Users\Asix\Desktop\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.csprojAssemblyReference.cache
+C:\Users\Asix\Desktop\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.dll
+C:\Users\Asix\Desktop\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.pdb
+C:\Users\Asix\Desktop\projecte_icid_godot\KillingDinos\.mono\temp\bin\Tools\Killing Dinos.dll
+C:\Users\Asix\Desktop\projecte_icid_godot\KillingDinos\.mono\temp\bin\Tools\Killing Dinos.pdb
+C:\Users\Asix\Desktop\projecte_icid_godot\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.csprojAssemblyReference.cache
+C:\Users\Asix\Desktop\projecte_icid_godot\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.dll
+C:\Users\Asix\Desktop\projecte_icid_godot\KillingDinos\.mono\temp\obj\Tools\Killing Dinos.pdb

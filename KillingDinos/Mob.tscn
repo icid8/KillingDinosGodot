@@ -1,0 +1,52 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://fly2.png" type="Texture" id=1]
+[ext_resource path="res://swim2.png" type="Texture" id=2]
+[ext_resource path="res://walk1.png" type="Texture" id=3]
+[ext_resource path="res://walk2.png" type="Texture" id=4]
+[ext_resource path="res://swim1.png" type="Texture" id=5]
+[ext_resource path="res://fly1.png" type="Texture" id=6]
+[ext_resource path="res://Mob.cs" type="Script" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "walk",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "fly",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "swim",
+"speed": 4.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 37.2811
+height = 12.201
+
+[node name="Mob" type="RigidBody2D"]
+position = Vector2( 267.357, 244.801 )
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -33.5488, -2.81549 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.10712, -5.38809 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Visibility" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 0.0374298, 3.11778 )
+[connection signal="screen_exited" from="Visibility" to="." method="_on_Visibility_screen_exited"]
